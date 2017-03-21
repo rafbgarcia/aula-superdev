@@ -1,0 +1,27 @@
+
+  <main>
+    <div class="container-fluid">
+      <section>
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2" role="Course Map">
+            <section class="box smaller">
+              <h6 class="box-title">
+                <img src="/assets/marker.png">
+                Mapa dos cursos
+              </h6>
+
+              <div id="course-map" class="d-flex flex-column align-items-center">
+                <% Course.all.each do |course| %>
+                  <a class="course complete" href="/cursos/html">
+                    <img width="50" src="<%= course.image %>">
+                    <%= course.name %>
+                  </a>
+                  <div class="divider"></div>
+                <% end %>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
