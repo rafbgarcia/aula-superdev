@@ -14523,7 +14523,7 @@ body > footer {
 
 /* line 16, /Users/rafa/superdev/superdev-rails/app/assets/stylesheets/general.sass */
 #course-map {
-  background: url(asset_path('bg_course_map.png'));
+  background: url('https://www.superdev.academy/assets/course_map_bg-f7cfd126b7c12e6f47501f7321f74818a6734fc1c31b6d333106c0eca2f9f63b.png');
   text-align: center;
   padding: 3rem;
 }
